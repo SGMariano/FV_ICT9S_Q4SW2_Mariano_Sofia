@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>q4 Seatwork 2</title>
+	<style type="text/css">
+		
+		body{
+			background: #8fa9c4;
+		}
+
+		form{
+			 width: 560px;
+             height: 450px;
+            margin: auto;
+            position: relative;
+            border: 5px dashed whitesmoke; 
+            padding: 20px; 
+            
+      
+		}
+		h1{
+			font-family:Gill Sans MT Ext Condensed Bold ;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>The Mini Calculator</h1>
+	<table>
+		<tr>
+			<td><img src="file:///C:/Users/Acer%20Nitro%205/Downloads/image-removebg-preview.png" ></td>
+			<td>
+	<center>
+		<form class="form-group">
+			<label id="num1"> Enter the value for X</label> 
+			 <input type="number" class="form-control" id="input1" placeholder="enter here">
+			<label id="num2"> Enter the value for Y</label>
+			 <input type="number" class="form-control" id="input2" placeholder="enter here">
+			<br> <br>
+			<button class="btn btn-info" id="button1" onclick="add()">ㅤSum of X and Yㅤ</button> 
+			<button class="btn btn-info" id="button2" onclick="product()">ㅤproduct of X and Yㅤ</button>
+			<br><br>
+			<button class="btn btn-info" id="button3" onclick="compare()">ㅤis X greater than Y</button>
+			<button class="btn btn-info" id="button4" onclick="sub()"> The diffrence of X and Y</button>
+		</form>
+	</center>
+
+	  <script type="text/javascript">
+	  	function add(){
+	  		var num1 = document.getElementById("input1").value;
+	  		var num2 = document.getElementById("input2").value;
+	  		var sum = Number(num1) + Number(num2);
+            window.alert("the sum of X and Y is:" + sum);
+	  	}
+
+	  	function product(){
+	  		var num1 = document.getElementById("input1").value;
+	  		var num2 = document.getElementById("input2").value;
+	  		var product = Number(num1) * Number(num2);
+            window.alert("the product of X and Y is:" +  product);
+	  	}
+
+	  	function compare(){
+	  		var num1 = document.getElementById("input1").value;
+	  		var num2 = document.getElementById("input2").value;
+	  		var compare = Number(num1) == Number(num2);
+            window.alert("is X greater than Y is :" +  compare);
+	  	}
+
+	  	function sub(){
+	  		var num1 = document.getElementById("input1").value;
+	  		var num2 = document.getElementById("input2").value;
+	  		var compare = Number(num1) - Number(num2);
+            window.alert("The diffrence of X and Y is:" +  compare);
+	  	}
+	  </script>
+</td>
+</tr>
+</body>
+</html>
